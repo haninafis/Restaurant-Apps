@@ -34,3 +34,30 @@ body, html {
   list-style-type: none;
   display: flex;
 }
+
+.heroelement {
+  display: flex;
+  align-items: center;
+  min-height: 350px;
+  width: 100%;
+  background-position: center;
+  text-align: center;
+}
+
+.heroelement_text {
+	margin: 0 auto;
+	max-width: 800px
+}
+.heroelement_texttitle {
+	color: #fff;
+	font-weight: 600;
+	font-size: 36px;
+	text-shadow: 1px 1px #141414
+}
+.heroelement_textsubtitle {
+	color: #fff;
+	margin-top: 16px;
+	font-size: 18px;
+	font-weight: 600;
+	text-shadow: 1px 1px #141414
+}
