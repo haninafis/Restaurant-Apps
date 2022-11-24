@@ -49,14 +49,15 @@ body, html {
 
 .heroelement_text {
 	margin: 0 auto;
-	max-width: 800px
 }
+
 .heroelement_texttitle {
 	color: #fff;
 	font-weight: 700;
 	font-size: 40px;
 	text-shadow: 1px 1px #000000
 }
+
 .heroelement_textsubtitle {
 	color: #fff;
 	margin-top: 20px;
@@ -64,3 +65,36 @@ body, html {
 	font-weight: 700;
 	text-shadow: 1px 1px #000000
 }
+
+.list {
+  margin: 20px;
+	display: grid;
+	grid-row-gap: 20px
+}
+
+.list_item {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.list_item_img {
+  border-radius: 6px 6px 0 0;
+	width: 100%;
+	max-height: 250px
+}
+
+.city {
+  color: black;
+  position: absolute;
+  top: 20px;
+  color: white;
+  background-color: #2C3333;
+  padding: 10px 20px 10px 20px;
+}
+
+.list_item_detail {
+  margin: 25px;
+}
+
+
