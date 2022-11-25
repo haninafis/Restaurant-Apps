@@ -1,6 +1,35 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
 	.navbar {
 		display: none
+	}
+	.navbar_mobile {
+		z-index: 10;
+		background-color: #fff;
+		width: 100%;
+		position: absolute;
+		-webkit-transform: translate(-100%, 0);
+		transform: translate(-100%, 0);
+		transition: transform 0.25s ease
+	}
+	.open {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0)
+	}
+	.navitems_mobile {
+		display: list-item;
+		color: black !important;
+		width: 100%;
+		text-align: left
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.navbar_menu {
+		display: none;
+	}
+
+	.navbar_mobile {
+		display: none;
 	}
 }
 

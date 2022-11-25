@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
 }
 
 body, html {
@@ -70,7 +71,7 @@ body, html {
 	color: #fff;
 	font-weight: 700;
 	font-size: 40px;
-	text-shadow: 1px 1px #000000
+	text-shadow: 1px 1px #000000;
 }
 
 .heroelement_textsubtitle {
@@ -78,12 +79,12 @@ body, html {
 	margin-top: 20px;
 	font-size: 20px;
 	font-weight: 700;
-	text-shadow: 1px 1px #000000
+	text-shadow: 1px 1px #000000;
 }
 
 .content {
 	width: 100%;
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 .content h1 {
@@ -109,7 +110,7 @@ body, html {
 .list_item_img {
   border-radius: 6px 6px 0 0;
 	width: 100%;
-	max-height: 250px
+	max-height: 250px;
 }
 
 .city {
@@ -129,6 +130,10 @@ body, html {
   margin: 10px 0 10px 0;
 }
 
+.list_item_detail a {
+  color: #2C3333;
+}
+
 footer {
 	background-color: #2C3333;
 	color: white;
@@ -138,3 +143,35 @@ footer {
   padding: 30px;
 }
 
+.navbar_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2C3333;
+  width: 100%;
+}
+
+.navbar_menu a {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.header_menu {
+  margin-left: 10px;
+}
+
+.navlist_mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style-type: none;
+}
+
+.navitems_mobile {
+  padding: 15px;
+}
+
+.navitems_mobile a {
+  color: #2C3333;
+}
