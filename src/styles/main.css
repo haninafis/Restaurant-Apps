@@ -14,6 +14,21 @@ body, html {
   height: 100%;
 }
 
+.skip_link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background-color: #c00d19;
+  color: white;
+  padding: 15px;
+  z-index: 100;
+  text-decoration: none;
+}
+ 
+.skip_link:focus {
+   top: 0;
+}
+
 .navbar {
   background-color: #2C3333;
   width: 100%;
