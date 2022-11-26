@@ -119,7 +119,7 @@ body, html {
   top: 20px;
   color: white;
   background-color: #2C3333;
-  padding: 10px 20px 10px 20px;
+  padding: 13px 20px 13px 20px;
 }
 
 .list_item_detail {
@@ -127,11 +127,19 @@ body, html {
 }
 
 .list_item_detail h2 {
-  margin: 10px 0 10px 0;
+  margin: 20px 0 10px 0;
 }
 
 .list_item_detail a {
   color: #2C3333;
+}
+
+.list_item_rating_value {
+  padding: 13px 11px 13px 11px;
+}
+
+.list_item_title a {
+  padding: 8px 0 8px 0;
 }
 
 footer {
@@ -174,4 +182,5 @@ footer {
 
 .navitems_mobile a {
   color: #2C3333;
+  padding: 15px 0 15px 0;
 }
