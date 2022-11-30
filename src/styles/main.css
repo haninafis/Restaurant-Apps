@@ -101,7 +101,7 @@ body, html {
 }
 
 .list_item {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(5, 5, 5, 0.35) 0px 5px 15px;
   width: 100%;
   border-radius: 6px;
   position: relative;
@@ -135,7 +135,7 @@ body, html {
 }
 
 .list_item_rating_value {
-  padding: 13px 11px 13px 11px;
+  padding: 15px;
 }
 
 .list_item_title a {
@@ -166,7 +166,11 @@ footer {
 }
 
 .header_menu {
-  margin-left: 10px;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  background-color: #2C3333;
+  font-size: 20px;
 }
 
 .navlist_mobile {

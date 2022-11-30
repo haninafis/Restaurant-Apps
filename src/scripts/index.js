@@ -2,8 +2,8 @@ import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/responsive.css';
 
-import ('../DATA.json').then(({default: jsonData}) => {
-    let datas = jsonData['restaurants']
+import data from '../DATA.json' 
+    let datas = data['restaurants']
     let dataList = '';
     datas.forEach(function(data) {
         dataList +=`
@@ -19,22 +19,21 @@ import ('../DATA.json').then(({default: jsonData}) => {
         `;
     });
     document.querySelector('#list').innerHTML = dataList;  
-});
 
 const menu = document.querySelector('#menu');
 const hero = document.querySelector('.heroelement');
 const main = document.querySelector('main');
 const drawer = document.querySelector('#drawer');
 
-menu.addEventListener('click', function (event) {
+menu.addEventListener('click', (event) => {
     drawer.classList.toggle('open');
     event.stopPropagation();
 });
 
-hero.addEventListener('click', function () {
+hero.addEventListener('click', () => {
     drawer.classList.remove('open');
 });
 
-main.addEventListener('click', function () {
+main.addEventListener('click', () => {
     drawer.classList.remove('open');
 });
