@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
+  list-style-type: none;
 }
 
 body, html {
@@ -31,27 +32,63 @@ body, html {
 }
 
 .navbar {
+  padding: 8px 16px;
   background-color: #2C3333;
-  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 11px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(1, 1, 1, 0.2);
+}
+
+.navbar .navbar_menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.navbar a {
-  padding: 19px;
+.navbar .navbar_menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 25x;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.navbar .navbar_brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar_brand h1 {
+  color: white;
+  font-size: 22px;
+  user-select: none;
+}
+
+.navbar .navbar_navigation {
+  position: absolute;
+  top: 50px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  padding: 10px;
+  background-color: #2C3333;
+  overflow: hidden;
+}
+
+.navbar .navbar_navigation.open {
+  left: 0;
+}
+
+.navbar .navbar_navigation ul li a {
+  display: inline-block;
   text-decoration: none;
   color: white;
-}
-
-.navbar a:hover {
-  background-color: #E7F6F2;
-  color: black;
-}
-
-.navlist {
-  list-style-type: none;
-  display: flex;
+  padding: 13px 5px;
+  margin-bottom: 5px;
+  width: 100%;
 }
 
 .heroelement {
@@ -171,20 +208,4 @@ footer {
   color: white;
   background-color: #2C3333;
   font-size: 20px;
-}
-
-.navlist_mobile {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  list-style-type: none;
-}
-
-.navitems_mobile {
-  padding: 15px;
-}
-
-.navitems_mobile a {
-  color: #2C3333;
-  padding: 15px 0 15px 0;
 }
