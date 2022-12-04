@@ -1,3 +1,5 @@
+import DataSource from '../../data/data-source';
+
 const Home = {
   async render() {
     return `
@@ -6,7 +8,8 @@ const Home = {
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    const restos = await DataSource.restaurantList();
+    console.log(restos);
   },
 };
 
