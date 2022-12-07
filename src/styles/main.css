@@ -178,6 +178,15 @@ body, html {
   padding: 8px 0 8px 0;
 }
 
+.list_item_description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
+
 footer {
 	background-color: #2C3333;
 	color: white;

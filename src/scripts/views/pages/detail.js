@@ -15,6 +15,7 @@ const Detail = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     let detailRestaurant = await DataSource.detailRestaurant(url.id);
     detailRestaurant = detailRestaurant.restaurant;
+    console.log(detailRestaurant);
     const restaurantContainer = document.querySelector('#resto');
     restaurantContainer.innerHTML = restoDetailTemplate(detailRestaurant);
 
@@ -26,6 +27,7 @@ const Detail = {
         pictureId: detailRestaurant.pictureId,
         rating: detailRestaurant.rating,
         city: detailRestaurant.city,
+        description: detailRestaurant.description,
       },
     });
   },

@@ -64,7 +64,7 @@ const restoItemTemplate = (resto) => `
         <div class="list_item_detail">
             <p class="list_item_rating">⭐️${resto.rating}</p>
             <h2 class="list_item_title"><a href="${`/#/detail/${resto.id}`}">${resto.name}</a></h2>
-            <div class="list_item_description">${resto.description.slice(0, 50)}...</div>
+            <div class="list_item_description">${resto.description}...</div>
         </div>
     </div>
   `;
