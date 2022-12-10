@@ -49,9 +49,9 @@ const restoDetailTemplate = (resto) => `
     </div>
     <div class="resto_review">
         <h2>Review</h2>
-        <ul class="review_list">
+        <div class="review_list">
             ${restoDetailReview(resto.customerReviews)}
-        </ul>
+        </div>
     </div>
 </div>
 `;
