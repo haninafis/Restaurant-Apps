@@ -2,9 +2,14 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "node": true
+        "node": true,
+        "jasmine": true,
+        "codeceptjs/codeceptjs": true
     },
-    "extends": "airbnb-base",
+    "extends": [
+        "airbnb-base",
+        "plugin:codeceptjs/recommended"
+    ],
     "overrides": [
     ],
     "parserOptions": {
@@ -21,5 +26,6 @@
         "no-prototype-builtins": 0,
         "import/prefer-default-export": 0,
         "no-return-assign": 0
-    }
+    },
+    "plugins": ["jasmine", "codeceptjs"]
 }
