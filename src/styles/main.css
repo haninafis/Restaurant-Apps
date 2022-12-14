@@ -178,6 +178,15 @@ body, html {
   padding: 8px 0 8px 0;
 }
 
+.list_item_description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
+
 footer {
 	background-color: #2C3333;
 	color: white;
@@ -277,4 +286,26 @@ footer {
 .review_item_name {
   font-weight: 700;
   margin-bottom: 10px;
+}
+
+/*
+  Like
+*/
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #395B64;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
 }

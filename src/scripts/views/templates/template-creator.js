@@ -49,9 +49,9 @@ const restoDetailTemplate = (resto) => `
     </div>
     <div class="resto_review">
         <h2>Review</h2>
-        <ul class="review_list">
+        <div class="review_list">
             ${restoDetailReview(resto.customerReviews)}
-        </ul>
+        </div>
     </div>
 </div>
 `;
@@ -64,12 +64,26 @@ const restoItemTemplate = (resto) => `
         <div class="list_item_detail">
             <p class="list_item_rating">⭐️${resto.rating}</p>
             <h2 class="list_item_title"><a href="${`/#/detail/${resto.id}`}">${resto.name}</a></h2>
-            <div class="list_item_description">${resto.description.slice(0, 50)}...</div>
+            <div class="list_item_description">${resto.description}...</div>
         </div>
     </div>
   `;
 
+const createLikeRestoButtonTemplate = () => `
+  <button aria-label="like this resto" id="likeButton" class="like">
+    <i class="fa fa-heart-o" aria-hidden="true"></i>
+  </button>
+`;
+
+const createUnlikeRestoButtonTemplate = () => `
+  <button aria-label="unlike this resto" id="likeButton" class="like">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+  </button>
+`;
+
 export {
   restoItemTemplate,
   restoDetailTemplate,
+  createLikeRestoButtonTemplate,
+  createUnlikeRestoButtonTemplate,
 };

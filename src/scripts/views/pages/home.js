@@ -13,7 +13,6 @@ const Home = {
 
   async afterRender() {
     const restaurantsAPI = await DataSource.restaurantList();
-
     if (!restaurantsAPI.error) {
       const restaurantContainer = document.querySelector('#restaurants');
       restaurantsAPI.restaurants.forEach((restaurant) => {
