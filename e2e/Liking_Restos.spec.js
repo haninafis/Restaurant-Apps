@@ -8,7 +8,6 @@ Before(({ I }) => {
 
 Scenario('showing empty liked restos', ({ I }) => {
     I.seeElement('#restaurants');
-    // I.seeElement('.restaurants'); // membuat test menjadi gagal
     I.see('Tidak ada resto untuk ditampilkan', '.resto_not_found');
 });
 
@@ -16,11 +15,12 @@ Scenario('liking one resto', async ({ I }) => {
     I.see('Tidak ada resto untuk ditampilkan', '.resto_not_found');
 
     I.amOnPage('/');
-    
+    pause();
     I.seeElement('.list_item_title a');
 
     const firstResto = locate('.list_item_title a').first();
     const firstRestoTitle = await I.grabTextFrom(firstResto);
+    
     I.click(firstResto);
 
     I.seeElement('#likeButton');
