@@ -33,5 +33,5 @@ Scenario('Unliking one restaurant', async ({ I }) => {
   I.click('#likeButton');
 
   I.amOnPage('/#/favorite');
-  I.seeElement('#restaurants');
+  I.seeElement('.resto_not_found');
 });

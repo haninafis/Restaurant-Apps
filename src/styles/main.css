@@ -98,12 +98,12 @@ body, html {
   width: 100%;
   background-position: center;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../public/images/heros/hero-large.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../public/images/hero-large.jpg');
 }
 
 @media (max-width: 600px) {
   .heroelement {
-    background-image: url('../public/images/heros/hero-small.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../public/images/hero-small.jpg');
   }
 }
 
