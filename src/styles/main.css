@@ -60,10 +60,11 @@ body, html {
   align-items: center;
 }
 
-.navbar .navbar_brand h1 {
+.navbar .navbar_brand a {
   color: white;
   font-size: 22px;
   user-select: none;
+  padding: 10px 0px;
 }
 
 .navbar .navbar_navigation {
@@ -97,6 +98,13 @@ body, html {
   width: 100%;
   background-position: center;
   text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../public/images/hero-large.jpg');
+}
+
+@media (max-width: 600px) {
+  .heroelement {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../public/images/hero-small.jpg');
+  }
 }
 
 .heroelement_text {
@@ -175,7 +183,7 @@ body, html {
 }
 
 .list_item_title a {
-  padding: 8px 0 8px 0;
+  padding: 10px 0 10px 0;
 }
 
 .list_item_description {

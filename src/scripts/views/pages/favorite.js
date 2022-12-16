@@ -21,7 +21,7 @@ const Favorite = {
     } else {
       restaurantContainer.innerHTML += `
             <div class="not-found">
-                <h3>Anda belum punya restoran favorit</h3>
+                <h3 class="resto_not_found">Tidak ada resto untuk ditampilkan</h3>
             </div>
             `;
     }
